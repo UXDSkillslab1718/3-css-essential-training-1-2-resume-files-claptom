@@ -1,0 +1,59 @@
+/* color pattern
+-------------------------
+#2E3532 - black
+#8B2635 - red
+#E0E2DB - white
+#D2D4C8 - white/pastel
+#D3EFBD - tea green
+*/
+
+
+/* Global styles
+-------------------------*/
+body{
+  font-family: ff-basic-gothic-pro, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+h3{
+  font-family: ff-basic-gothic-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+h1, h2{
+  font-family: 'pt-sans-pro-caption';
+}
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size:  30px;
+}
+a{
+  color: #8B2635;
+}
+a:hover{
+  text-decoration: none;
+}
+
+/* Header and Footer
+-------------------------*/
+header, footer{
+  background: #2E3532;
+  color: #E0E2DB;
+}
+header p,header p{
+  color: #D3EFBD;
+}
+
+/* Work Experience
+-------------------------*/
+.work{
+  background: #E0E2DB;
+}
+
+/* Education
+-------------------------*/
+.education{
+  background: #D3EFBD;
+}
