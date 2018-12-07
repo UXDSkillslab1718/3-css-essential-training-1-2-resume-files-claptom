@@ -10,10 +10,17 @@
 
 /* Global styles
 -------------------------*/
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
 body{
   font-family: ff-basic-gothic-pro, sans-serif;
   font-weight: 200;
   font-style: normal;
+  margin: 0;
 }
 h3{
   font-family: ff-basic-gothic-pro, sans-serif;
@@ -28,12 +35,30 @@ h1{
 }
 h2{
   font-size:  30px;
+  margin-top: 0;
 }
 a{
-  color: #8B2635;
+  color: #D3EFBD;
 }
 a:hover{
   text-decoration: none;
+  color: #8B2635;
+}
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: auto;
+}
+.col-narrow{
+  width: 30%;
+  float: left;
+  min-height: 200px;
+}
+.col-wide{
+  width: 70%;
+  float: left;
+  min-height: 200px;
 }
 
 /* Header and Footer
@@ -42,10 +67,43 @@ header, footer{
   background: #2E3532;
   color: #E0E2DB;
 }
-header p,header p{
+/* header */
+header .col-wide{
+    padding-left: 40px;
+}
+header .col-narrow{
+  min-height: 0;
+}
+.profile-img{
+  border-radius: 13%;
+  /* margin-top: 30px; */
+}
+header h1, header h2{
+  margin: 0;
+  color: #E0E2DB;
+}
+header h2{
+  font-size: 25px;
+}
+header p, header ul{
   color: #D3EFBD;
 }
-
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a{
+  padding: 10px;
+  display: inline-block;
+  /* text-decoration: none; */
+}
+footer .content-wrap{
+  padding-bottom: 5px;
+}
+.copyright{
+  margin: 40px auto 0;
+  display: inline-block;
+}
 /* Work Experience
 -------------------------*/
 .work{
