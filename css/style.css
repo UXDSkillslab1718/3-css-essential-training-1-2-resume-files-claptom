@@ -26,6 +26,7 @@ h3{
   font-family: ff-basic-gothic-pro, sans-serif;
   font-weight: 600;
   font-style: normal;
+  margin: 0;
 }
 h1, h2{
   font-family: 'pt-sans-pro-caption';
@@ -53,12 +54,15 @@ a:hover{
 .col-narrow{
   width: 30%;
   float: left;
-  min-height: 200px;
+  min-height: 100px;
 }
 .col-wide{
   width: 70%;
   float: left;
-  min-height: 200px;
+  min-height: 100px;
+}
+.uppercase{
+  text-transform: uppercase;
 }
 
 /* Header and Footer
@@ -109,9 +113,21 @@ footer .content-wrap{
 .work{
   background: #E0E2DB;
 }
+h3 ~ p{
+  margin: 0;
+}
+.job-description p:first-of-type{
+  margin-top: 0;
+}
+.job-description{
+  margin-bottom: 20px;
+}
 
 /* Education
 -------------------------*/
 .education{
   background: #D3EFBD;
+}
+p + h3{
+  margin-top: 30px;
 }
