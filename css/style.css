@@ -1,7 +1,7 @@
 /* color pattern
 -------------------------
-#2E3532 - black
-#8B2635 - red
+#2E3532 - black - red
+#B0413E
 #E0E2DB - white
 #D2D4C8 - white/pastel
 #D3EFBD - tea green
@@ -39,16 +39,16 @@ h2{
   margin-top: 0;
 }
 a{
-  color: #D3EFBD;
+  color: #B0413E;
 }
 a:hover{
   text-decoration: none;
-  color: #8B2635;
+  color: #D2D4C8;
 }
 .content-wrap{
   max-width: 950px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 60px 50px;
   overflow: auto;
 }
 .col-narrow{
@@ -64,6 +64,15 @@ a:hover{
 .uppercase{
   text-transform: uppercase;
 }
+.btn{
+  text-decoration: none;
+
+  background: #B0413E;
+  color: white;
+  /* padding: 10px; */
+  display: inline-block;
+  float: left;
+}
 
 /* Header and Footer
 -------------------------*/
@@ -72,6 +81,10 @@ header, footer{
   color: #E0E2DB;
 }
 /* header */
+header{
+  padding-top: 50px;
+  position: relative;
+}
 header .col-wide{
     padding-left: 40px;
 }
@@ -80,7 +93,11 @@ header .col-narrow{
 }
 .profile-img{
   border-radius: 13%;
-  /* margin-top: 30px; */
+}
+.download{
+  position: absolute;
+  bottom: 0;
+  right: 0px;
 }
 header h1, header h2{
   margin: 0;
@@ -99,7 +116,7 @@ footer {
 .contact-info a{
   padding: 10px;
   display: inline-block;
-  /* text-decoration: none; */
+
 }
 footer .content-wrap{
   padding-bottom: 5px;
@@ -108,6 +125,23 @@ footer .content-wrap{
   margin: 40px auto 0;
   display: inline-block;
 }
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a{
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 1000px;
+}
+
 /* Work Experience
 -------------------------*/
 .work{
