@@ -114,9 +114,12 @@ footer {
   text-align: center;
 }
 .contact-info a{
+  color: #D3EFBD;
   padding: 10px;
   display: inline-block;
-
+}
+.contact-ingo a:hover{
+  color: #B0413E;
 }
 footer .content-wrap{
   padding-bottom: 5px;
@@ -124,6 +127,7 @@ footer .content-wrap{
 .copyright{
   margin: 40px auto 0;
   display: inline-block;
+  color: #D3EFBD;
 }
 /* Navigation
 -------------------------*/
@@ -131,6 +135,7 @@ nav {
   text-align: center;
   background: white;
   position: fixed;
+  z-index: 500;
   top: 0;
   width: 100%;
 }
@@ -160,7 +165,10 @@ h3 ~ p{
 /* Education
 -------------------------*/
 .education{
-  background: #D3EFBD;
+  /* background: #D3EFBD; */
+  background: linear-gradient(rgba(211, 239, 189,0.8),rgba(211, 239, 189,0.8)),
+              url(../images/frankfurt.jpg) no-repeat fixed;
+  background-size: cover;
 }
 p + h3{
   margin-top: 30px;
