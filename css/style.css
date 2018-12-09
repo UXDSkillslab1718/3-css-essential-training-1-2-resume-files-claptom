@@ -43,7 +43,7 @@ a{
 }
 a:hover{
   text-decoration: none;
-  color: #D2D4C8;
+  color: white;
 }
 .content-wrap{
   max-width: 950px;
@@ -51,16 +51,7 @@ a:hover{
   padding: 60px 50px;
   overflow: auto;
 }
-.col-narrow{
-  width: 30%;
-  float: left;
-  min-height: 100px;
-}
-.col-wide{
-  width: 70%;
-  float: left;
-  min-height: 100px;
-}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -129,6 +120,9 @@ footer .content-wrap{
   display: inline-block;
   color: #D3EFBD;
 }
+.fa-facebook-square, .fa-linkedin, .fa-envelope-square{
+  font-size: 20px;
+}
 /* Navigation
 -------------------------*/
 nav {
@@ -166,10 +160,64 @@ h3 ~ p{
 -------------------------*/
 .education{
   /* background: #D3EFBD; */
-  background: linear-gradient(rgba(211, 239, 189,0.8),rgba(211, 239, 189,0.8)),
-              url(../images/frankfurt.jpg) no-repeat fixed;
+  background: /* linear-gradient(rgba(211, 239, 189,0.8),rgba(211, 239, 189,0.8)), */
+              url(../images/education.jpg) no-repeat fixed;
   background-size: cover;
 }
 p + h3{
   margin-top: 30px;
+}
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px){
+  .col-narrow{
+    width: 30%;
+    float: left;
+    min-height: 100px;
+  }
+  .col-wide{
+    width: 70%;
+    float: left;
+    min-height: 100px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img{
+    width: 200px;
+  }
+  .btn.download{
+    display: none;
+  }
+  header .col-wide{
+      padding-left: 0;
+  }
+  .profile-img{
+    border-radius: 13%;
+    margin: 15px auto;
+  }
+  .contact-info a:first-of-type{
+    display: none;
+  }
+  .contact-info a{
+    padding: 1.2em 1.3em 0 1.3em;
+  }
+}
+.job-description{
+  padding-top: 15px;
+  padding-bottom: 0.8em;
+}
+@media (max-width: 420px){
+  nav {
+    display: none;
+  }
+  header{
+    padding-top: 0;
+  }
+  .fa-facebook-square, .fa-linkedin, .fa-envelope-square{
+    font-size: 40px;
+  }
 }
